@@ -1,20 +1,20 @@
 {
-  "name": "splines",
-  "version": "0.1.0",
-  "description": "A web playground for bezier curves",
-  "main": "./index.js",
-  "scripts": {
-    "dev": "parcel src/templates/index.pug",
-    "build": "parcel build src/templates/index.pug"
-  },
-  "author": "ma1ted",
-  "license": "ISC",
-  "devDependencies": {
-    "@parcel/transformer-pug": "^2.3.2",
-    "parcel": "^2.3.2"
-  },
-  "dependencies": {
-    "three": "^0.138.3",
-    "three.meshline": "^1.4.0"
-  }
+    "name": "splines",
+    "version": "2.1.0",
+    "source": "src/templates/index.pug",
+    "description": "An interactive web playground for creating and editing Bézier Curves",
+    "scripts": {
+        "start": "parcel",
+        "build": "parcel build"
+    },
+    "author": "ma1ted",
+    "license": "ISC",
+    "devDependencies": {
+        "@parcel/transformer-pug": "^2.3.2",
+        "parcel": "^2.3.2"
+    },
+    "dependencies": {
+        "three": "^0.138.3",
+        "three.meshline": "^1.4.0"
+    }
 }
