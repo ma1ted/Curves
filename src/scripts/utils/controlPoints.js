@@ -46,14 +46,12 @@ export function GetClickedHandle (scene, raycaster, mouse, camera) {
 }
 
 export function AddControlPoint(scene, inputs) {
-    if (controlHandles.length <= 1) {
+    if (controlHandles.children.length <= 1) {
         controlHandles.children.forEach((handle) => scene.remove(handle));
         controlHandles.children = [];
-        InitialiseControlHandles(scene);
+        InitialiseControlHandles(scene, inputs);
         return;
     }
-
-    console.log(controlHandles)
 
     // In order to insert a new point between the last two points the midpoint needs to be found
     const midpoint = new THREE.Vector3(
