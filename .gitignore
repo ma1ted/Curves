@@ -1,3 +1,5 @@
 dist
 node_modules
 .parcel-cache
+.pnpm-debug.log
+pnpm-lock.yaml

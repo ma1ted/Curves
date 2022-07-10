@@ -45,10 +45,10 @@ const inputs = {
 };
 
 const defaultColours = {
-    bg: new THREE.Color(0x0d1923),
-    handle: new THREE.Color(0xffffff),
-    controlLine: new THREE.Color(0xffffff),
-    curve: new THREE.Color(0xff1150),
+    bg: new THREE.Color(0x293241),
+    handle: new THREE.Color(0xE0FBFC),
+    controlLine: new THREE.Color(0xE0FBFC),
+    curve: new THREE.Color(0xEE6C4D),
 };
 
 function Initialise() {
@@ -58,7 +58,7 @@ function Initialise() {
     inputs.curve.colour.value = '#'.concat(defaultColours.curve.getHexString());
 
     SetCurveColour(defaultColours.curve);
-    SetHandleColour(defaultColours.handles);
+    SetHandleColour(defaultColours.handle);
     SetControlLineColour(defaultColours.controlLine);
 
     SetCurveWidth(inputs.curve.size.value);
